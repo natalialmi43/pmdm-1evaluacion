@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/spacing"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="@dimen/iv_car_width"
+        android:layout_height="@dimen/iv_car_height"
+        android:src="@drawable/ic_car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        android:background="@drawable/shape_rectangle"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_car">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:textSize="@dimen/size_tv"
+            android:text="@string/brand" />
+
+
+        <TextView
+            android:id="@+id/tv_fill_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:textStyle="bold"
+            tools:text="Ejemplo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing"
+        android:background="@drawable/shape_rectangle"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_first">
+
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:textSize="@dimen/size_tv"
+            android:text="@string/model"  />
+
+
+
+        <TextView
+            android:id="@+id/tv_fill_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:textStyle="bold"
+            tools:text="Ejemplo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        android:background="@drawable/shape_rectangle"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_second">
+
+        <TextView
+            android:id="@+id/tv_motor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:textSize="@dimen/size_tv"
+            android:text="@string/motor"/>
+
+        <TextView
+            android:id="@+id/tv_fill_motor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:textStyle="bold"
+            tools:text="Ejemplo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        android:background="@drawable/shape_rectangle"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_third">
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:layout_marginTop="@dimen/margin_top_tv"
+            android:textSize="@dimen/size_tv"
+            android:text="@string/price"/>
+
+        <TextView
+            android:id="@+id/tv_fill_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing"
+            android:textStyle="bold"
+            tools:text="Ejemplo" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
