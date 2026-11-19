@@ -3,4 +3,10 @@
     <string name="local_source_xml">cars_tesla</string>
     <string name="label_vehicle_selected">Introduce un ID de vehículo:</string>
     <string name="buscar_veh_culo">Buscar Vehículo</string>
+    <string name="brand"> MARCA </string>
+    <string name="model"> MODELO </string>
+    <string name="motor"> MOTOR </string>
+    <string name="price"> PRECIO SUGERIDO </string>
+    <string name="loading"> CARGANDO </string>
+    <string name="error"> ERROR </string>
 </resources>
